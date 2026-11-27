@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Cadastro</h1>
+    <p class="subtitle">Preencha todos os campos abaixo.</p>
+
+    <div id="resultado" class="resultado" role="status" aria-live="polite" hidden></div>
+
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name">
+        <span class="erro" id="erro-nome"></span>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="exemplo@email.com" autocomplete="email">
+        <span class="erro" id="erro-email"></span>
+      </div>
+
+      <div class="campo">
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" name="idade" inputmode="numeric" placeholder="Sua idade">
+        <span class="erro" id="erro-idade"></span>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres" autocomplete="new-password">
+        <span class="erro" id="erro-senha"></span>
+      </div>
+
+      <div class="campo">
+        <label for="confirmaSenha">Confirmar senha</label>
+        <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Repita a senha" autocomplete="new-password">
+        <span class="erro" id="erro-confirmaSenha"></span>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
